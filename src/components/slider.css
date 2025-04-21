@@ -1,0 +1,97 @@
+.galeria {
+  text-align: center;
+  display: flex;
+}
+
+.imagen-grande {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+
+}
+
+.imagen-grande-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes-pequenas {
+  margin-top: 1rem;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imagen-pequena {
+  
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.imagen-pequena-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cuando está seleccionada */
+.imagen-pequena.seleccionada {
+  border: 2px solid #000;
+}
+
+
+  .centrar{
+margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 40px;
+    height: auto;
+    
+  
+  }
+
+/* reviews */
+.reviews-list {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+.review-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.review-header {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.review-date {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.review-rating {
+  color: gold;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.review-comment {
+  font-style: italic;
+  color: #444;
+}

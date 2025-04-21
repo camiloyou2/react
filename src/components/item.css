@@ -1,0 +1,94 @@
+.producto-card {
+  background: none;
+  border: none;
+  padding: 0;
+  perspective: 1000px;
+  width: 250px;
+  height: 350px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.producto-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-front {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-back {
+  background: #f7f7f7;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.info {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.descripcion {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.estrellas {
+  color: gold;
+  margin: 0.5rem 0;
+}
+
+.precio {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.descripcion-larga {
+  max-height: 100%;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Scrollbar personalizado (opcional) */
+.scrollable-text::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollable-text::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}

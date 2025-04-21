@@ -1,0 +1,30 @@
+.productos-container {
+  width: 100%;
+ justify-content: center;
+  display: flex;
+  flex-wrap: wrap;          /* Permite que los productos se envuelvan cuando no haya suficiente espacio */
+  gap: 20px;                /* Espacio entre los productos */
+  
+  padding: 10px;            /* Espacio alrededor del contenedor */
+}
+.contenedor{
+  width: 100%;
+  display: flex;
+}
+
+
+.contender_para_importar {
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contender_para_importar h4 {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.scroll-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
