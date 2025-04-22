@@ -15,9 +15,7 @@ interface Props{
   
    function actualizarCantidadEnCarrito(id:any, cantidad:any) {
     // Validar que la cantidad sea válida
-    console.log(id)
-    console.log(cantidad)
-  
+
   
     // Obtener el carrito guardado desde localStorage
     const carritoGuardado = JSON.parse(localStorage.getItem("carrito")) || [];

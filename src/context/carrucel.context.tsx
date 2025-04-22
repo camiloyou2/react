@@ -2,6 +2,7 @@ import  { createContext, useState, ReactNode } from "react";
 
 // Define la forma de los datos que esperas de la API
 export interface Producto {
+  
     id: number;
     title: string;
     description: string;

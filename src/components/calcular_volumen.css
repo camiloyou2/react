@@ -4,7 +4,7 @@
     padding: 25px 30px;
     border-radius: 12px;
     max-width: 450px;
-    margin: 40px auto;
+
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     font-family: 'Segoe UI', sans-serif;
   }
@@ -55,3 +55,16 @@
     color: #fff;
   }
   
+  .c_container{
+margin: 10px 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden; /* opcional, solo si no querés scroll horizontal */
+  }
+  .seccion{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }

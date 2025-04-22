@@ -32,6 +32,11 @@ function Barra_superio(){
         // Puedes agregar aquí una llamada a API o lógica de filtrado
       };
      
+      const navigate_container = () => {
+        fetchProductos(searchTerm); // Actualiza el contexto con el valor del input
+        navigate("/container");
+        // Puedes agregar aquí una llamada a API o lógica de filtrado
+      };
     return (
         <>
         <header className="header">
@@ -72,7 +77,8 @@ function Barra_superio(){
       </header>
 
       {isCartVisible && (
-         <div className="cart-panel">
+        <div className="cart-panel">
+
 <div className="contender_para_importar mx-auto p-4 shadow rounded">
     <h4 className="fw-bold mb-4 text-start">PRODUCTOS DEL CONTENEDOR</h4>
 
@@ -104,7 +110,7 @@ index !== 0 && (
   
 
     <div className="text-center mt-4">
-        <button className="btn btn-primary">Ir al contenedor</button>
+        <button onClick={navigate_container} className="btn btn-primary">Ir al contenedor</button>
     </div>
 </div>
 </div> )}
